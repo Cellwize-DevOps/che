@@ -2,8 +2,6 @@
 <@layout.registrationLayout displayInfo=social.displayInfo; section>
     <#if section = "title">
         ${msg("loginTitle",(realm.displayName!''))}
-    <#elseif section = "header">
-        ${msg("loginTitleHtml",(realm.displayNameHtml!''))}
     <#elseif section = "form">
         <#include "logo.ftl">
 

@@ -2,8 +2,6 @@
 <@layout.registrationLayout; section>
     <#if section = "title">
         ${msg("registerWithTitle",(realm.displayName!''))}
-    <#elseif section = "header">
-        ${msg("registerWithTitleHtml",(realm.displayNameHtml!''))?no_esc}
     <#elseif section = "form">
         <#include "logo.ftl">
 

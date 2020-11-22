@@ -8,14 +8,14 @@
 
 # Variables in `COPY --from=` is not supported see https://github.com/moby/moby/issues/34482
 # this is workaround to handle that.
-ARG CHE_DASHBOARD_ORGANIZATION=quay.io/eclipse
+ARG CHE_DASHBOARD_ORGANIZATION=cellwizeltd
 ARG CHE_DASHBOARD_NEXT_ORGANIZATION=quay.io/che-incubator
 ARG CHE_DASHBOARD_VERSION=next
 ARG CHE_DASHBOARD_NEXT_VERSION=next
 ARG CHE_WORKSPACE_LOADER_ORGANIZATION=quay.io/eclipse
 ARG CHE_WORKSPACE_LOADER_VERSION=next
 
-FROM ${CHE_DASHBOARD_ORGANIZATION}/che-dashboard:${CHE_DASHBOARD_VERSION} as che_dashboard_base
+FROM ${CHE_DASHBOARD_ORGANIZATION}/chime-dashboard:${CHE_DASHBOARD_VERSION} as che_dashboard_base
 FROM ${CHE_DASHBOARD_NEXT_ORGANIZATION}/che-dashboard-next:${CHE_DASHBOARD_NEXT_VERSION} as che_dashboard_next
 FROM ${CHE_WORKSPACE_LOADER_ORGANIZATION}/che-workspace-loader:${CHE_WORKSPACE_LOADER_VERSION} as che_workspace_loader_base
 

@@ -113,7 +113,7 @@ che:
   logLevel: "INFO"
 
 dashboard:
-  image: quay.io/eclipse/che-dashboard:next
+  image: cellwizeltd/chime-dashboard:next
   imagePullPolicy: "Always"
   memoryRequest: 16Mi
   memoryLimit: 256Mi
